@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
-
+'''顺序查找'''
 def sequential_search(a_list,item):
     pos = 0
     found = False
@@ -23,7 +23,7 @@ test_list = [1,2,32,5,8,17,19,42,13,0]
 print(sequential_search(test_list,3))
 print(sequential_search(test_list,13))
 
-
+'''二分查找'''
 def binary_search(a_list,item):
     first = 0
     last = len(a_list) -1
@@ -43,7 +43,7 @@ test_list = [0,1,2,3,8,13,17,19,32,42]
 print(binary_search(test_list,3))
 print(binary_search(test_list,13))
 
-
+'''哈希查找'''
 class HashTable:
     def __init__(self):
         self.size = 11
